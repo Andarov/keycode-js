@@ -33,13 +33,13 @@ document.addEventListener("keydown", (evt)=> {
         </li>
 
         <li class="card">
-            <div class="card__header">altKey</div>
+            <div class="card__header">event altKey</div>
             <div class="card__main">${evt.altKey}</div>
             <div class="card__description">${evt.altKey == true ? "printed Alt" : "Not printed"}</div>
         </li>
 
         <li class="card">
-            <div class="card__header">ctrlKey</div>
+            <div class="card__header">event ctrlKey</div>
             <div class="card__main">${evt.ctrlKey}</div>
             <div class="card__description">${evt.ctrlKey == true ? "printed Ctrl" : "Not printed"}</div>
         </li>
