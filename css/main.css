@@ -237,10 +237,14 @@ a {
     }
 
     .table-link {
-        top: 0;
+        top: 15px;
         padding: 0;
         border: none;
         color: blue;
+    }
+
+    .info {
+        border-radius: 10px;
     }
 }
 
