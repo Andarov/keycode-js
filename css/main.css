@@ -101,7 +101,6 @@ a {
 }
 
 .header__container {
-    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -126,10 +125,14 @@ a {
     opacity: 0.6;
 }
 
+.hero {
+    position: relative;
+}
+
 .table-link {
     position: absolute;
-    top: 70px;
-    right: calc(50% - 560px);
+    top: 15px;
+    right: 20px;
     padding: 8px 15px;
     color: var(--text-color);
     font-size: 16px;
@@ -139,6 +142,10 @@ a {
     border-radius: 5px;
     cursor: pointer;
     transition: color 0.4s ease;
+}
+
+.table-link-js {
+    right: 0;
 }
 
 .table-link:hover {
@@ -206,4 +213,10 @@ a {
     font-weight: 400;
     padding: 20px;
     background-color: rgba(0,0,0,.04);;
+}
+
+@media only screen and (max-width: 1150px) {
+    .list {
+        justify-content: center;
+    }
 }

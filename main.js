@@ -1,7 +1,11 @@
 const elContent = document.querySelector(".content");
+const elTableLink = document.querySelector(".table-link");
 document.addEventListener("keydown", (evt)=> {
+    elTableLink.remove()
     elContent.innerHTML = `
-    <a class="table-link" href="https://www.toptal.com/developers/keycode/table-of-all-keycodes">Table</a>
+    <div class="hero container">
+        <a class="table-link table-link-js" href="https://www.toptal.com/developers/keycode/table-of-all-keycodes">Table</a>
+    </div>
     <div class="content__main">${evt.which}</div>
     <ul class="list">
         <li class="card">
