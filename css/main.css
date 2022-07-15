@@ -86,6 +86,11 @@ a {
 }
 
 .main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
     flex-grow: 1;
 }
 
@@ -96,6 +101,7 @@ a {
 }
 
 .header__container {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -109,6 +115,7 @@ a {
 .header__link {
     white-space: nowrap;
     color: var(--white-color);
+    transition: opacity 0.4s ease;
 }
 
 .header__link:hover {
@@ -117,4 +124,86 @@ a {
 
 .header__link:active {
     opacity: 0.6;
+}
+
+.table-link {
+    position: absolute;
+    top: 70px;
+    right: calc(50% - 560px);
+    padding: 8px 15px;
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 700;
+    background: transparent;
+    border: 3px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.4s ease;
+}
+
+.table-link:hover {
+    color: blue;
+}
+
+.info {
+    padding: 16px 32px;
+    font-size: 24px;
+    line-height: 1.5;
+    background-color: #000;
+    color: var(--white-color);
+    border-radius: 50px;
+}
+
+.content__main {
+    font-size: 40vmin;
+    text-align: center;
+    line-height: 1;
+}
+
+/* List */
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-left: -30px;
+    margin-bottom: -30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    border-radius: 100px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.card__header {
+    padding: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    background-color: var(--box-color);
+}
+
+.card__main {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 700;
+    padding: 20px 0;
+    text-align: center;
+    background-color: var(--white-color);
+}
+
+.card__link {
+    color: blue;
+}
+
+.card__description {
+    flex-grow: 1;
+    font-weight: 400;
+    padding: 20px;
+    background-color: rgba(0,0,0,.04);;
 }
