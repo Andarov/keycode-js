@@ -1,9 +1,11 @@
 :root {
+    --header-bg: #000;
     --text-color: #2e2e2e;
     --box-color: #ffc600;
     --font-family: "Roboto", "Arial", sans-serif;
     --body-bg-color: #f2f4f8;
     --box: #ccc;
+    --white-color: #fff;
 }
 
 /* FONTS */
@@ -85,4 +87,34 @@ a {
 
 .main-content {
     flex-grow: 1;
+}
+
+.header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--header-bg);
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__owner {
+    color: var(--white-color);
+    margin-right: 20px;
+}
+
+.header__link {
+    white-space: nowrap;
+    color: var(--white-color);
+}
+
+.header__link:hover {
+    opacity: 0.8;
+}
+
+.header__link:active {
+    opacity: 0.6;
 }
