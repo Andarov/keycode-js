@@ -220,3 +220,32 @@ a {
         justify-content: center;
     }
 }
+
+@media only screen and (max-width: 430px) {
+    .header__container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header__owner {
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+
+    .hero {
+        padding-bottom: 10px;
+    }
+
+    .table-link {
+        top: 0;
+        padding: 0;
+        border: none;
+        color: blue;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .card {
+        width: 280px;
+    }
+}
